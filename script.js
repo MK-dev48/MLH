@@ -29,6 +29,9 @@ function Search(s){
 		case s = "Weblio":
 		url = "https://ejje.weblio.jp/content/" + value;
 			break;
+		case s = "Wiki":
+		url = "https://ja.wikipedia.org/w/index.php?search="; + value;
+			break;
 
 		default:
 			console.log("なんかが変だ！")
