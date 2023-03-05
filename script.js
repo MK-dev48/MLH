@@ -1,15 +1,18 @@
 //検索窓で検索
 
 function Search(s){
-	const textbox = document.getElementById("search"); //検索ボックスを取得
-	const value = textbox.value; //検索ボックスの中身を取得
+	const textbox = document.getElementById("search");
+	const value = textbox.value;
 	let url = "";
 
 	if (!value){return;} //空文字チェック
 
-	switch (s) { //受け取った引数によって､検索エンジンを変える｡
+	switch (s) {
 		case s = "Google":
 		url = "https://www.google.com/search?q=" + value;
+		if(value.startsWith("http://") || value.startsWith("https://") || value.startsWith("www.")){
+			url = value;
+		}
 			break;
 		case s = "Images":
 		url = "https://www.google.com/search?q=" + value + "&tbm=isch";
@@ -30,7 +33,10 @@ function Search(s){
 		url = "https://ejje.weblio.jp/content/" + value;
 			break;
 		case s = "Wiki":
-		url = "https://ja.wikipedia.org/w/index.php?search="; + value;
+		url = "https://ja.wikipedia.org/w/index.php?search=" + value;
+			break;
+		case s = "Yodo":
+		url = "https://www.yodobashi.com/?word=" + value;		
 			break;
 
 		default:
@@ -40,7 +46,7 @@ function Search(s){
 	window.location.href = url;
 }
 
-function guguru(event){ //検索ボックスに入力があったときに動くスクリプト Enterキー以外何も起こらない｡
+function guguru(event){
 	if (event.keyCode == 13){
 		Search("Google");
 	}
