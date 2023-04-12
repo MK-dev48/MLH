@@ -9,13 +9,13 @@ function Search(s){
 
 	switch (s) {
 		case s = "Google":
-		url = "https://www.google.com/search?q=" + value;
+		url = "https://www.google.co.jp/search?q=" + value;
 		if(value.startsWith("http://") || value.startsWith("https://") || value.startsWith("www.")){
 			url = value;
 		}
 			break;
 		case s = "Images":
-		url = "https://www.google.com/search?q=" + value + "&tbm=isch";
+		url = "https://www.google.co.jp/search?q=" + value + "&tbm=isch";
 			break;
 		case s = "Youtube":
 		url = "https://www.youtube.com/results?search_query=" + value ;
