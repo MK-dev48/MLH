@@ -1,0 +1,144 @@
+ * {/*
+	 border-style: solid;
+	 border-color: #ff1b1b;*/
+	 text-align: center;
+ }
+
+ :root{
+	/*ここを編集する事でページ全体の色を変えられる｡*/
+	--bgc1: #161616;
+	--bgc2: #6b6b6b;
+	--bgc3: #eeeeee; /*BackGround Color*/
+ }
+
+ body{
+	margin: 0;
+	padding: 0;
+	background-color: var(--bgc1);
+ }
+
+ /*----------------------------grids-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ .whole{/*
+	border-style: dashed;
+	border-color: #000aff;*/
+	margin: 0;
+	padding: 0;
+	height: 100vh; 
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(16, calc(99.77vw / 16));
+	grid-template-rows: repeat(9, calc(99.77vh / 9));
+
+	color: var(--bgc3);
+}
+
+.whole a{
+		text-decoration: none;
+		color: inherit;
+		margin: 0,0,0,0;
+		padding: 0,0,0,0;
+}
+
+.item{
+	background-color: inherit;
+	transition: 3s;
+	text-align: center;
+	vertical-align: center;
+	margin: 0,0,0,0;
+	padding: 0,0,0,0;
+	width: 100%;
+	height: 100%;
+
+	border-color: var(--bgc2);
+	border-style: solid;
+	border-width: 0.1px;
+}
+
+.item a{
+	
+	margin: 0,0,0,0;
+	padding-left: 50%;
+	padding-right: 50%;
+	padding-bottom: 3em;
+
+	text-align: center;
+	cursor: default;
+
+}
+.search{
+		grid-column:  6/12;
+		grid-row:  3/6;
+	text-align: center;
+
+	
+	border-style: solid;/*
+	border-image: linear-gradient(0deg, pink, blue) 3;*/
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+.searchbox{
+	text-align: center;/*
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;*/
+}
+.searchbox input{
+	width: 90%;
+	text-align: center;
+}
+
+.buttons{
+	text-align: left;
+	margin-left: 2em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.buttons input{
+	min-width: 7em;
+	max-width: 7em;
+	border-width: thin;
+
+	box-shadow: 1px 1px 2px var(--bgc2);
+	
+	color: var(--bgc3);
+	background-color: var(--bgc1);
+	border-color: var(--bgc3);
+
+	cursor: pointer;
+}
+
+/*-----------------------------hover----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.item:hover{
+	transition: 0.5s;/*
+	border-style: solid;
+	border-width: thin;*/
+	background-color: var(--bgc2);
+}
+.search:hover{/*
+	border-style: solid;
+	border-width: thin;
+	background-color: #ebebeb;*/
+}
+.memo:hover{
+	background-color: var(--bgc2);
+	transition: 1s;
+}
+
+
+
+
+
+
+
+
