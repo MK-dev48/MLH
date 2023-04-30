@@ -103,8 +103,8 @@
 	margin-bottom: 1em;
 }
 .buttons input{
-	min-width: 7em;
-	max-width: 7em;
+	min-width: calc(calc(100% / 4) - 4px); 
+	max-width: calc(calc(100% / 4) - 4px);;
 	border-width: thin;
 
 	box-shadow: 1px 1px 2px var(--bgc2);
