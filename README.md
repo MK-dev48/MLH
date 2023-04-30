@@ -13,9 +13,9 @@ Webブラウザの規定(ホーム)ページに､自分が好きなように書
 4,MLHが利用可能になる  
 (5),自分の好みに合わせてMLHのファイルを編集する
 
-MLHのテーマ：
-MLHv1 ： Click and Go
-MLHv2 ： Utterly Simple Homepage
+MLHのテーマ：  
+  MLHv1 ： Click and Go  
+  MLHv2 ： Utterly Simple Homepage  
 
 注意）Webブラウザによっては､拡張機能の導入がなければ新規ページのURLが指定できない場合があります｡ローカルファイルをWebブラウザで開く際は､ファイルのパスの頭に「file:///」を付ける必要があります｡
 
